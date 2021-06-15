@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="container">
+        <Header>
+            <h2 class="pt-4 pl-2 ls-5" style="font-variant: all-petite-caps;">RAM KUMAR ARVIND'S JOURNAL</h2>
+            <p class="pb-4 m-0 pl-2 ls-3" style="font-weight: 500; font-variant: all-petite-caps;">Find Your Peace And Live In It</p>
+        </Header>
+
+        <section class='banner' onclick="showLogin()"></section>
+
+        <div class="mt-4">
+            <p style="font-weight: 500; font-variant: all-petite-caps;">EVERYDAY STORIES</p>
+            <div class="Stories" id=''>
+                <div id="carouselExampleControls" style="font-weight: 500; font-variant: all-petite-caps;" class="carousel slide"data-interval="false">
+                    <div class="carousel-inner" id="Stories_Container">
+                        <!-- Dynamic Story Content will be appen here -->
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="login" id="loginDiv">
+        <div class="login_child">
+            <button class="close" onclick="hideLogin()">x</button>
+            <div class="login_container">
+                <h5 class="my-3">Login to post day story</h5>
+                <input type="text" placeholder="User Name" id="username" class="form-control my-2" />
+                <input type="password" placeholder="Password" id="password" class="form-control my-2" />
+                <button class="btn mt-4" onclick="submitForm()">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="addStory" id='addStory'>
+        <div class="story_child">
+            <div class="story_container">
+                <h3 class="mb-5 text-center" style="font-weight: lighter;">Add your story</h3>
+                <div class="mb-3">
+                    <label for="storyDate" class="form-label">Date</label>
+                    <input class="form-control" type="date" id="storyDate">
+                </div>
+                <div class="mb-3">
+                    <label for="storyTitle" class="form-label">Title</label>
+                    <input class="form-control" type="text" id="storyTitle">
+                </div>
+                <div class="mb-3">
+                    <label for="formFile" class="form-label">STORY</label>
+                    <!-- <input class="form-control" type="text" style="height: 150px;" id="formFile"> -->
+                    <textarea style="height: 150px; width: 100%; border-radius: 5px;" id="fullStory"></textarea>
+                </div>
+                <div class="text-center">
+                    <button class="addStoryBtn" onclick="Story()">Add Story !</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

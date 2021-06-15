@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Lato', sans-serif !important;
+    /* font-weight: 100 !important; */
+    background-color: black !important;
+    color: white !important;
+}
+.banner {
+    width: 100%;
+    height: 80vh;
+    background-image: url(./profile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.story_title, .story_date {
+    font-family: 'Lato', sans-serif !important;
+    /* font-weight: 100 !important; */
+    letter-spacing: 2px;
+}
+.day_story {
+    font-family: 'Lato', sans-serif !important;
+    /* font-weight: 300; */
+    text-align: justify;
+    letter-spacing: 1px;
+}
+/* h2 {
+    font-weight: 200 !important;
+} */
+.Stories {
+    margin-bottom: 4rem;
+}
+#Icons {
+    display: none;
+}
+.carousel-control-prev,
+.carousel-control-next {
+    bottom: -40px !important;
+    top: auto !important;
+    margin-top: 10px;
+    width: 9% !important;
+    background: #141414 !important;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    background-size: 50% 100% !important;
+}
+.carousel-control-prev {
+    right: 10% !important;
+    left: auto !important;
+}
+.login, .addStory {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0,0,0,0.8);
+    display: none;
+}
+.login_child, .story_child {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+}
+.close {
+    padding: 0px 10px;
+    background: #141414;
+    border: none;
+    color: #fff;
+}
+.login_container, .story_container {
+    width: 40%;
+    /* height: 60%; */
+    background-color: black;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    text-align: center;
+    padding: 15px;
+    color: white;
+}
+.login_container h5 {
+    text-align: center;
+    font-family: 'Lato', sans-serif !important;
+    font-weight: lighter;
+}
+.login_container button {
+    background: #141414;
+    color: #fff;
+}
+.story_container {
+    width: 60% !important;
+    text-align: left;
+}
+.form-label  {
+    font-weight: lighter !important;
+}
+.addStoryBtn {
+    padding: 5px 10px;
+    border: none;
+    transition: all 0.3s;
+}
+.addStoryBtn:hover {
+    background: #d7d7d7;
+}
+.ls-5 {
+    letter-spacing: 5px;
+}
+.ls-3 {
+    letter-spacing: 3px;
+}
